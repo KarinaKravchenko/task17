@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://notary.kz/response"
+           xmlns="http://notary.kz/response"
+           elementFormDefault="qualified">
+
+   <xs:element name="RequestStatus">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="RequestNumber" type="xs:int"/>
+            <xs:element name="Status" type="xs:string"/>
+            <xs:element name="Message" type="xs:string"/>
+            <xs:element name="ProcessedDate" type="xs:dateTime"/>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+</xs:schema>

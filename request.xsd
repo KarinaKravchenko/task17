@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://notary.kz/request"
+           xmlns="http://notary.kz/request"
+           elementFormDefault="qualified">
+
+   <xs:element name="ClientRequest">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="RequestNumber" type="xs:int"/>
+            <xs:element name="RequestDate" type="xs:date"/>
+            <xs:element name="Client">
+               <xs:complexType>
+                  <xs:sequence>
+                     <xs:element name="ClientType" type="xs:string"/>
+                     <xs:element name="ClientName" type="xs:string"/>
+                     <xs:element name="Phone" type="xs:string"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+            <xs:element name="AllowContractRenewal" type="xs:boolean"/>
+            <xs:element name="RegistryExtract" minOccurs="0">
+               <xs:complexType>
+                  <xs:sequence>
+                     <xs:element name="ExtractNumber" type="xs:string" minOccurs="0"/>
+                     <xs:element name="ExtractDate" type="xs:date" minOccurs="0"/>
+                     <xs:element name="ClassifierNumber" type="xs:string" minOccurs="0"/>
+                     <xs:element name="DeregistrationReason" type="xs:string" minOccurs="0"/>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+</xs:schema>

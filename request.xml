@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:req="http://notary.kz/request">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <req:ClientRequest>
+         <req:RequestNumber>12345</req:RequestNumber>
+         <req:RequestDate>2026-02-18</req:RequestDate>
+         <req:Client>
+            <req:ClientType>INDIVIDUAL</req:ClientType>
+            <req:ClientName>Иванов И.И.</req:ClientName>
+            <req:Phone>87001234567</req:Phone>
+         </req:Client>
+         <req:AllowContractRenewal>true</req:AllowContractRenewal>
+         <req:RegistryExtract>
+            <req:ExtractNumber>EX-7788</req:ExtractNumber>
+            <req:ExtractDate>2026-02-17</req:ExtractDate>
+            <req:ClassifierNumber>CLS-001</req:ClassifierNumber>
+            <req:DeregistrationReason/>
+         </req:RegistryExtract>
+      </req:ClientRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

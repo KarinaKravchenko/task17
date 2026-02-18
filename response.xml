@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:res="http://notary.kz/response">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <res:RequestStatus>
+         <res:RequestNumber>12345</res:RequestNumber>
+         <res:Status>ACCEPTED</res:Status>
+         <res:Message>Заявление принято к обработке</res:Message>
+         <res:ProcessedDate>2026-02-18T12:30:00</res:ProcessedDate>
+      </res:RequestStatus>
+   </soapenv:Body>
+</soapenv:Envelope>
